@@ -6,7 +6,7 @@ const AboutSection = () => {
         <div className="about">
             <div className="glitch" data-text="EUGENE SANG">EUGENE SANG</div>
             <div className="glow">EUGENE SANG</div>
-            <p className="subtitle">IMPRACTICAL DEVELOPER</p>
+            <p className="subtitle">DREAMS CODED REAL</p>
         </div>
         <div className="scanlines"></div>
     </section>);

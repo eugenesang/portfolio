@@ -1,0 +1,70 @@
+:root{
+    --green: #1DBF73;
+    --red: #FE5858;
+}
+
+body{
+    background-color: rgb(245 245 245 / 97%);
+}
+
+
+.container{
+    padding-top: 30px;
+}
+.red-text {
+    font-size: 2rem;
+    color: var(--red);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    width: fit-content;
+    margin: .3rem auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.img-container {
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+img {
+    max-width: 80vw;
+    max-height: 50vh;
+    display: inline-block;
+    margin: .3rem auto;
+}
+
+button {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: .2rem;
+    display: block;
+    margin: 1rem auto;
+    padding: 5px 10px;
+}
+
+button.page-btn:hover{
+    background-color: transparent;
+    border-color: var(--red);
+}
+
+.page-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .2rem;
+    margin: .2rem;
+}
+
+.page-btn a:checked, .page-btn a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+button.page-btn:hover a{
+    color: var(--red);
+}

@@ -1,22 +1,20 @@
 import './App.css';
 import Background from './background.jsx';
-import AboutSection from './components/About.jsx';
-import Hero from './components/Hero.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/home/index.js';
+import Error404 from './pages/404/404.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Background />
-      <div className='app-container'>
-        <div className='scroll-snap-section'>
-          <Hero />
-        </div>
-        <div className='scroll-snap-section'>
-          <AboutSection />
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="*" element={<Error404/>} />
+        </Routes>
       </div>
-
-    </div>
+    </Router>
   );
 }
 

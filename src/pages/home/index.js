@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import AboutSection from './About';
+import WhyUs from './WhyUs';
 
 const HomePage = () => {
     return (
@@ -10,6 +11,9 @@ const HomePage = () => {
         </div>
         <div className='scroll-snap-section'>
             <AboutSection />
+        </div>
+        <div className='scroll-snap-section'>
+            <WhyUs/>
         </div>
     </div>);
 }

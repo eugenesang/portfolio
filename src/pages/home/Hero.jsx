@@ -11,6 +11,7 @@ const generateRandomText = (length) => {
 };
 
 
+
 const Box = ({ letter, index, revealDelay, arrows, symbols }) => {
     const [currentText, setCurrentText] = React.useState(generateRandomText(1));
     const [completed, setCompleted] = useState(false);

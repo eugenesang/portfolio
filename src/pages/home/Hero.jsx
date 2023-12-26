@@ -19,7 +19,7 @@ const Box = ({ letter, index, revealDelay, arrows, symbols }) => {
         const interval = setInterval(() => {
             setCompleted(false)
             setCurrentText(generateRandomText(1));
-        }, 50);
+        }, 100);
 
         setTimeout(() => {
             clearInterval(interval);

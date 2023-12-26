@@ -38,22 +38,47 @@ function placeSentence(text) {
   return placeStrings(text).map((str) => placeStringInArray(str));
 }
 
+const GridRow = ({ sentence, animate }) => {
+  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const [randomCharacters, setRandomCharacters] = useState(Array(12).fill(' '));
 
-const GridRow = ({ sentence }) => {
-    const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    const classes = sentence ? sentence.map((d) => (d !== ' ' && d ? 'filled' : 'empty')) : ids.map(() => 'empty');
-  
-    return (
-      <div className="why-us-grid-row">
-        {ids.map((id) => (
-          <div className={`why-us-cell ${classes[id - 1]}`} key={id}>
-            <span>{sentence ? sentence[id - 1] : ' '}</span>
-          </div>
-        ))}
-      </div>
-    );
+  useEffect(() => {
+    let intervalId;
+
+    if (animate) {
+      intervalId = setInterval(() => {
+        setRandomCharacters((prevCharacters) =>
+          prevCharacters?.map(() => getRandomCharacter()) ||Array(12).map(()=>getRandomCharacter())
+        );
+        
+      }, 50);
+    } else {
+        
+    }
+
+    return () => {
+        clearInterval(intervalId);
+        setRandomCharacters(sentence);
+    };
+  }, [animate]);
+
+  const getRandomCharacter = () => {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    return characters[randomIndex];
   };
 
+  return (
+    <div className="why-us-grid-row">
+      {ids.map((id) => (
+        <div className={`why-us-cell`} key={id}>
+          <span>{randomCharacters ? randomCharacters[id - 1] : ' '}</span>
+        </div>
+      ))}
+    </div>
+  );
+  
+};
 
 const WhyUs = () => {
   const ids = [1, 2, 3];
@@ -69,11 +94,16 @@ const WhyUs = () => {
 
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [sentence, setSentence] = useState(texts[sentenceIndex]);
+  const [animate, setAnimate] = useState(true);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 1500);
       setSentenceIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2500);
+    }, 7500);
 
     return () => clearInterval(intervalId);
   }, [texts]);
@@ -86,7 +116,7 @@ const WhyUs = () => {
     <div className="why-us">
       <div className="why-us-container">
         {ids.map((id) => (
-          <GridRow key={id} sentence={sentence[id - 1]} />
+          <GridRow key={id} sentence={sentence[id - 1]} animate={animate} />
         ))}
       </div>
     </div>

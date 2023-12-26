@@ -53,7 +53,7 @@ const Hero = () => {
         { intro: "What if your online presence", explanation: "kept customers coming back?" },
         { intro: "What if your website", explanation: "worked seamlessly on any device?" },
         { intro: "What if your digital space", explanation: "used a cutting-edge tech to lead the way?" },
-        { intro: "What if your website", explanation: "a fortress against online threats?" },
+        { intro: "What if your website", explanation: "was a fortress against online threats?" },
         { intro: "What if your success", explanation: "was our top priority?" },
         {intro: "What if your vision", explanation: "could be brought to life?"}
     ];

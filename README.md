@@ -1,3 +1,7 @@
+# Eugene Kiprop Sang - Portfolio Website
+
+![image](https://github.com/eugenesang/portfolio/assets/85967099/534bcca7-7bea-4fad-90ed-d3f90a6d1664)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

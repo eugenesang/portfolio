@@ -1,0 +1,51 @@
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+
+    .nav-left{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 20px;
+
+        img{
+            width: 50px;
+        }
+
+        .name-container{
+            font-size: 25px;
+        }
+
+        @media screen and (max-width: 768px){
+            .name-container{
+                font-size: medium;
+            }
+        }
+    }
+
+    .nav-right{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        width: fit-content;
+        padding: 0px 20px;
+
+        button{
+            border: 1px solid goldenrod;
+            color: goldenrod;
+            background-color: transparent;
+        }
+
+        button:hover{
+            color: white;
+            background-color: darkblue;
+            border-color: white;
+        }
+    }
+}

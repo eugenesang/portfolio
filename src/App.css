@@ -8,3 +8,22 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.gold-text{
+  color: gold;
+}
+
+
+/* Background */
+
+.background{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #010c1a;
+}
+
+/* Background end */

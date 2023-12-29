@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Menu from '../components/Menu';
+import Nav from '../components/Nav';
+import Header from '../components/Header';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
+import "../css/yago-home-page.css";
 
 const HomePage = () => {
-    return ( <div className="home-page">
-        <h1>Eugene Sang</h1>
-    </div> );
+
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuState, setMenuState] = useState('deactive');
+
+    function toggleMenu() {
+        setMenuOpen(!menuOpen);
+        if (menuOpen) {
+            setMenuState('active');
+        } else {
+            setMenuState('deactive');
+        }
+    }
+    return (<div className="home-page">
+
+        <Menu toggleMenu={toggleMenu} showMenu={menuState} />
+        <Nav toggleMenu={toggleMenu} showMenu={menuState} />
+
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+
+    </div>);
 }
- 
+
 export default HomePage;

@@ -16,8 +16,8 @@ html, body {
 }
 
 body {
-  color: #252934;
-  background: #fafafa;
+  color: #dad6cb;
+  /* background: #fafafa; */
   font-size: 62.5%;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
 
 a,
 a:visited {
-  color: #252934;
+  color: #dad6cb;
   font-size: 1.4rem;
   text-decoration: none;
   transition: 200ms;
@@ -33,7 +33,7 @@ a:visited {
 
 a:hover,
 a:active {
-  color: #f300b4;
+  color: #ffa400;
 }
 
 
@@ -58,7 +58,7 @@ a:active {
   right: 0;
   height: calc( 100vh - 120px );
   width: calc( 100vw - 120px );
-  background: #fafafa;
+  /* background: #fafafa; */
 }
 
 .menu-container.active > .overlay {
@@ -112,13 +112,13 @@ a:active {
   z-index: -1;
 }
 
-.menu-container::before {
+/* .menu-container::before {
   background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
 }
 
 .menu-container::after {
   background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
-}
+} */
 
 .menu-container.deactive {
   animation: fade-out 600ms forwards;
@@ -214,7 +214,7 @@ a:active {
 
 .menu-container ul li a:hover::after {
   content: ' »';
-  color: #f300b4;
+  color: #ffa400;
 }
 
 .social {
@@ -233,7 +233,7 @@ a:active {
 
 .menu-container a:hover,
 .menu-container a:active {
-  color: #f300b4;
+  color: #ffa400;
 }
 
 @media only screen and (max-width: 649px) {
@@ -357,7 +357,7 @@ a:active {
 .menu-button:hover > span,
 .menu-button:hover > span::before,
 .menu-button:hover > span::after {
-  background: #f300b4;
+  background: #ffa400;
 }
 
 .menu-button.active > span  {
@@ -397,10 +397,7 @@ a:active {
  *****************/
 
 #welcome-section {
-  background: #202736;
-  background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
-  background-attachment: fixed;
-  background-size: cover;
+  
   position: relative;
   min-height: 100vh;
   margin: 0 auto;
@@ -410,7 +407,7 @@ a:active {
 #welcome-section::before {
   content: '';
   position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  /* background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true); */
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
@@ -433,7 +430,7 @@ a:active {
   position: absolute;
   bottom: -300px;
   left: 0;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom left repeat-x;
+  /* background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom left repeat-x; */
   background-size: cover;
   width: 100%;
   height: 80%;
@@ -477,8 +474,7 @@ a:active {
   position: absolute;
   top: 0;
   right: 0;
-  position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Moon.svg?sanitize=true) right 150% no-repeat;
+  background: url(../assets/logo-mini.svg) right 150% no-repeat;
   background-size: 40% 40%;
   background-attachment: fixed;
   width: 100%;
@@ -555,14 +551,14 @@ a:active {
 
 #welcome-section .container .buttons a:hover,
 #welcome-section .container .buttons a:active {
-  border: 1px solid #f300b4;
+  border: 1px solid #ffa400;
   transform: translateY(-2px);
-  box-shadow: 0 10px 100px -20px #f300b4;
+  box-shadow: 0 10px 100px -20px #ffa400;
 }
 
 #welcome-section .container .buttons a.cta,
 #welcome-section .container .buttons a.cta:visited {
-  background: #f300b4;
+  background: #ffa400;
   border: 1px solid transparent;
   color: #fafafa;
   font-weight: bold;
@@ -571,7 +567,7 @@ a:active {
 #welcome-section .container .buttons a.cta:hover,
 #welcome-section .container .buttons a.cta:active {
   background: transparent;
-  border: 1px solid #f300b4;
+  border: 1px solid #ffa400;
 }
 
 #welcome-section .container .buttons a:first-child {
@@ -583,7 +579,7 @@ a:active {
 }
 
 .color {
-  color: #f300b4;
+  color: #ffa400;
   font-style: italic;
 }
 
@@ -631,10 +627,10 @@ a:active {
   min-height: 100vh;
   font-size: 1.4rem;
   position: relative;
-  background: #fafafa;
+  /* background: #fafafa; */
   clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
-  background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
+  /* background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat; */
   background-attachment: fixed;
 }
 
@@ -665,7 +661,7 @@ a:active {
 }
 
 #about .separator {
-  background: #f300b4;
+  background: #ffa400;
   width: 150px;
   height: 2px;
   margin: 1rem 0;
@@ -742,20 +738,20 @@ a:active {
   min-height: 100vh;
   font-size: 1.4rem;
   position: relative;
-  background: #f0f0f0;
-  background: linear-gradient(215deg, #f0f0f0 0%,#fafafa 100%);
+  /* background: #f0f0f0; */
+  /* background: linear-gradient(215deg, #f0f0f0 0%,#fafafa 100%); */
   margin-top: -10rem;
   z-index: 1;
 }
 
 #projects a,
 #projects a:visited {
-  color: #f300b4;
+  color: #ffa400;
 }
 
 #projects a:hover,
 #projects a:active {
-  color: #252934;
+  color: #dad6cb;
 }
 
 /* Container */
@@ -774,7 +770,7 @@ a:active {
 }
 
 #projects .heading .separator {
-  background: #f300b4;
+  background: #ffa400;
   width: 150px;
   height: 2px;
   margin: 1rem auto;
@@ -803,7 +799,7 @@ a:active {
 #projects .project .project-link {
   display: block;
   margin: auto 0;
-  color: #252934;
+  color: #dad6cb;
   overflow: hidden;
   text-align: center;
   border-radius: 50%;
@@ -838,13 +834,13 @@ a:active {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0;
-  color: #f300b4;
+  color: #ffa400;
 }
 
 /* Icons */
 #projects .project-details .icons {
   margin: 0;
-  color: #252934;
+  color: #dad6cb;
 }
 
 #projects .project-details .icons i {
@@ -872,15 +868,15 @@ a:active {
   width: 49%;
   padding: .5rem;
   border: none;
-  border-bottom: 1px solid #f300b4;
-  color: #252934;
-  background: #fafafa;
+  border-bottom: 1px solid #ffa400;
+  color: #dad6cb;
+  /* background: #fafafa; */
   font-size: 1.2rem;
   text-align: center;
 }
 
 #projects .project-details .buttons a:hover {
-  background: #f300b4;
+  background: #ffa400;
   color: #fafafa;
 }
 #projects .project-details .buttons i {
@@ -929,7 +925,7 @@ a:active {
  *****************/
 
 #contact {
-  background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  /* background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right; */
   clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
   color: #fafafa;
   min-height: 100vh;
@@ -959,7 +955,7 @@ a:active {
 }
 
 #contact .heading-wrapper .social a:hover {
-  color: #f300b4;
+  color: #ffa400;
 }
 
 .heading-wrapper .heading .title {
@@ -968,7 +964,7 @@ a:active {
 }
 
 .heading-wrapper .heading .separator {
-  background: #f300b4;
+  /* background: #ffa400; */
   width: 150px;
   height: 2px;
   margin: 1rem 0;
@@ -1009,11 +1005,11 @@ input[type="email"]:focus,
 input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
-  border-bottom: 1px solid #f300b4;
+  border-bottom: 1px solid #ffa400;
 }
 
 input[type="submit"] {
-  background: #f300b4;
+  background: #ffa400;
   color: #fafafa;
   margin-top: 1rem;
   width: auto;
@@ -1040,7 +1036,7 @@ input[type="submit"]:focus {
 .mail .at, .mail .dot {
   font-size: .9rem;
   margin: 0 .1rem;
-  color: #f300b4;
+  color: #ffa400;
 }
 
 
@@ -1076,12 +1072,7 @@ footer {
   font-size: 1rem;
   display: flex;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   height: 150px;
-  background: #fafafa;
   z-index: 0;
 }
 

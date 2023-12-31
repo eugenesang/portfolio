@@ -1,0 +1,93 @@
+#page-loader{
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    svg{
+        display: block;
+        height: 30vh;
+        width: 30vh;
+        margin: 10px auto;
+    }
+    path {
+        fill: transparent;
+        stroke: #ffa400;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+    
+    .background-line {
+        stroke-dasharray: 1177.729;
+        animation: logoAppear 2s linear;
+    }
+    
+    
+    .box-line {
+        stroke-dasharray: 1515.555;
+        animation: innerBorder 4s linear;
+        stroke-width: 2;
+        /* Delay the start of this animation by 3 seconds */
+    }
+    
+    .art-line {
+        stroke-dasharray: 2785.141;
+        animation: artLine 4s linear;
+        stroke-width: 2;
+        /* Delay the start of this animation by 6 seconds */
+    }
+    
+    @keyframes logoAppear {
+        0% {
+            stroke-dashoffset: 1177.729;
+        }
+    
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes innerBorder {
+        0% {
+            stroke-dashoffset: 1515.555;
+        }
+    
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes artLine {
+        0% {
+            stroke-dashoffset: 2785.141;
+        }
+    
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes colorPath {
+        0%{
+            fill: #ffa400;
+        }
+        100%{
+            fill: #ffa400;
+        }
+    }
+    
+    @keyframes colorPath1 {
+        0%{
+            fill: black;
+        }
+        100%{
+            fill: black;
+        }
+    }
+}

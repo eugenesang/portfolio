@@ -63,10 +63,10 @@ const Projects = props => {
                     <p className="subtitle">
                         Here's a list of <u>most</u> of the projects I've been working on lately. All of these
                         were built during my coding camp adventure on{' '}
-                        <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
-                            freeCodeCamp
+                        <a href="https://github.com/eugenesang/" target="_blank" rel="noopener noreferrer">
+                            GitHub
                         </a>
-                        , where I've been coding for almost 7 months non-stop until I completed all the projects
+                        , where I've been coding non-stop until I completed all the projects
                         required to get my Full-Stack Developer certification.
                     </p>
                 </div>

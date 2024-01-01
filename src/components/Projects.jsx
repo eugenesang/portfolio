@@ -1,5 +1,7 @@
 import React from 'react';
 
+import workHubImg from '../assets/workhubwriters-screenshot.png'
+
 
 /***********************
     Project Component
@@ -73,11 +75,11 @@ const Projects = props => {
                 <div className="projects-wrapper">
                    
                     <Project
-                        title="Issue Tracker."
-                        img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/IssueTracker.jpg'}
-                        tech="js node css"
-                        link="https://yagoestevez-issue-tracker.glitch.me/"
-                        repo="https://github.com/yagoestevez/fcc-issue-tracker"
+                        title="WorkHub Writers"
+                        img={workHubImg}
+                        tech="react node css d3"
+                        link="https://workhubwriters.com/"
+                        repo="https://github.com/workhubwriters"
                     >
                         <small>Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug.</small>
                         <p>Yet another full-stack app to save and manage technical issues to be fixed.</p>

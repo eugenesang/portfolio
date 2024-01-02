@@ -1,6 +1,6 @@
 # Eugene Kiprop Sang - Portfolio Website
 
-![image](https://github.com/eugenesang/portfolio/assets/85967099/534bcca7-7bea-4fad-90ed-d3f90a6d1664)
+![image](./src/assets/workhubwriters-screenshot.png)
 
 # Getting Started with Create React App
 

@@ -2,6 +2,7 @@ import React from 'react';
 
 import workHubImg from '../assets/workhubwriters-screenshot.png'
 import topEssayIncLogo from '../assets/topEssayInc.svg';
+import stockishaImg from "../assets/stockisha-home.png";
 
 
 /***********************
@@ -87,7 +88,7 @@ const Projects = props => {
                     </Project>
                     <Project
                         title="Top Essay Inc"
-                        img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/MetricImperialConverter.jpg'}
+                        img={topEssayIncLogo}
                         tech="js node css"
                         link="https://topessayinc.com"
                         repo="https://github.com/topessayinc/"
@@ -98,16 +99,15 @@ const Projects = props => {
                         </p>
                     </Project>
                     <Project
-                        title="URL Shortener Microservice."
-                        img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Cortala.jpg'}
-                        tech="js node css"
-                        link="https://cortala.glitch.me/example"
-                        repo="https://github.com/yagoestevez/cortala"
+                        title="Stockisha E-Whole-seller."
+                        img={stockishaImg}
+                        tech="js node css react"
+                        link="https://stockisha.com"
+                        repo="https://github.com/stockisha"
                     >
-                        <small>Built using Node, Express, CSS + Bootstrap and Pug.</small>
+                        <small>Built using Node, Express, CSS + HTML and EJS.</small>
                         <p>
-                            A microservice which takes a raw URL and makes it a short link to make it easy to sent
-                            it through the Internet.
+                            A e-shop that connects retailers to whole sellers and manufacturers. It also has incorporated transporters in it.
                         </p>
                     </Project>
                     <Project

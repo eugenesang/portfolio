@@ -1,6 +1,7 @@
 import React from 'react';
 
 import workHubImg from '../assets/workhubwriters-screenshot.png'
+import topEssayIncLogo from '../assets/topEssayInc.svg';
 
 
 /***********************
@@ -85,16 +86,15 @@ const Projects = props => {
                         <p>Yet another full-stack app to save and manage technical issues to be fixed.</p>
                     </Project>
                     <Project
-                        title="Metric-Imperial Converter."
+                        title="Top Essay Inc"
                         img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/MetricImperialConverter.jpg'}
                         tech="js node css"
-                        link="https://yagoestevez-metric-imperial-converter.glitch.me/"
-                        repo="https://github.com/yagoestevez/fcc-metric-imperial-converter/"
+                        link="https://topessayinc.com"
+                        repo="https://github.com/topessayinc/"
                     >
                         <small>Built using Node, Express, JS + jQuery, CSS + Bootstrap and Pug.</small>
                         <p>
-                            Another full-stack for converting values from the Internation System of Units (Metric)
-                            into the imperial units.
+                            A fullstack project for a personal writing portfolio. Writers attract clients using such custom websites.
                         </p>
                     </Project>
                     <Project

@@ -83,7 +83,7 @@ const Projects = props => {
                         repo="https://github.com/workhubwriters"
                     >
                         <small>Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug.</small>
-                        <p>Yet another full-stack app to save and manage technical issues to be fixed.</p>
+                        <p>Yet another full-stack app to connect clients to writers and writing talents</p>
                     </Project>
                     <Project
                         title="Top Essay Inc"

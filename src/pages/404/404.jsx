@@ -4,7 +4,7 @@ import errorImage from './errorImage.png';
 const Error404 = () => {
     return ( <>
         {/* Hello world */}
-        <div className="container">
+        <div className="container" id='page_404'>
           <h3>
             <span className="red-text">Oops!</span> That is awkward... you are looking
             for something that does not exist

@@ -1,13 +1,13 @@
 
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { FaStar, FaArrowRight} from "react-icons/fa"
+import { FaStar, FaArrowRight } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 
 import projectsData from "../../data/projects.json"
 import userInfo from "../../data/usersInfo.json"
 
-const projects  = projectsData.projects;
+const projects = projectsData.projects;
 
 function Projects() {
 
@@ -58,10 +58,10 @@ function Projects() {
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
                 <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>Latest Works</p>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
-
-
-                <Link href="/projects">
-                    <span data-aos="zoom-in-up" className={`text-center text-green-200 underline absolute top-[50px] text-[14px]`}>All Projects</span>
+            </div>
+            <div className={`text-end block`} style={{ width: "100%", textAlign: "right", paddingRight: '10px'}}>
+                <Link to="/projects">
+                    <span data-aos="zoom-in-up" className={`text-center text-green-200 underline text-[14px]`}>All Projects</span>
                 </Link>
             </div>
 
@@ -110,7 +110,7 @@ function Projects() {
                                             {
                                                 list.project_url !== "" ?
                                                     <>
-                                                        <Link href={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
+                                                        <Link to={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
                                                             View
                                                         </Link>
                                                         <ion-icon name="arrow-forward-outline" className={`ml-[10px] p-[10px]`}></ion-icon>
@@ -159,7 +159,7 @@ function GithubRepo({ repos }) {
                                     </span>
                                 </div>
 
-                                <Link href={rep.html_url} target={"_blank"} className="absolute right-3 top-2 flex flex-row items-center">
+                                <Link to={rep.html_url} target={"_blank"} className="absolute right-3 top-2 flex flex-row items-center">
                                     <small className="underline">View</small>
                                     <FaArrowRight className="ml-2 text-[12px] " />
                                 </Link>

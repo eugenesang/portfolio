@@ -135,8 +135,8 @@ function ResumeViewer({ openResume }) {
 
     function dowloadCv() {
         let link = document.createElement("a")
-        link.href ="/resume";
-        link.download = "resume.pdf"
+        link.href ="/resume.pdf";
+        link.download = "/resume.pdf"
         link.click()
     }
 
@@ -148,7 +148,7 @@ function ResumeViewer({ openResume }) {
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-green-300 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  " onClick={dowloadCv}>Download</button>
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-red-500 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95] " onClick={openResume}>Close</button>
                 </div>
-                <iframe title="Download Resume" src={"/CV/resume.pdf"} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
+                <iframe title="Download Resume" src={"/resume.pdf"} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
                 <br />
                 <br />
                 <br />

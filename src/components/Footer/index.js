@@ -1,6 +1,7 @@
 import { Container } from ".."
 import { FaTwitter, FaGithub, FaFacebook, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
 import { AiFillMail } from "react-icons/ai"
+import { Link } from "react-router-dom"
 
 import socials from "../../data/socials.json"
 import usersInfo from "../../data/usersInfo.json"
@@ -50,9 +51,9 @@ export default Footer
 function SocialLink({ url, children }) {
 
   return (
-    <a href={url} target="_blank" className=" no-underline text-white-100 decoration-none hover:text-white-100 mr-4 ">
+    <Link to={url} target="_blank" className=" no-underline text-white-100 decoration-none hover:text-white-100 mr-4 ">
       {children}
-    </a>
+    </Link>
   )
 }
 
@@ -60,7 +61,7 @@ function Refer() {
   return (
     <div className="w-screen flex flex-row items-center justify-center absolute bottom-[100px] mx-auto md:bottom-[10px]">
       <span className="py-2 text-[12px] text-white-200 ">
-        Powered with 💖 by <a target="_blank" href="https://github.com/benrobo/baaymax" className="text-green-200 underline hover:text-green-200">BaayMax</a>
+        Created by <Link target="_blank" href="https://github.com/eugenesang/portfolio" className="text-green-200 underline hover:text-green-200">Eugene Sang</Link>
       </span>
     </div>
   )

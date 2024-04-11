@@ -51,6 +51,7 @@ export default function Header({ children }) {
 
         })()
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
@@ -115,13 +116,13 @@ export default function Header({ children }) {
                             {/* <img data-aos="zoom-in-up" src={avatar === "" ? userAvatar.src : avatar} className={`avatar rounded-[50%] `} /> */}
                         </div>
                         <div data-aos="fade-up" className={`circleA`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[0]} className={`langImgA`} />
+                            <img alt="My best language" src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[0]} className={`langImgA`} />
                         </div>
                         <div data-aos="fade-right" className={`circleB`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[1]} className={`langImgB`} />
+                            <img alt="Language 2" src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[1]} className={`langImgB`} />
                         </div>
                         <div data-aos="fade-left" className={`circleC`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[2]} className={`langImgC`} />
+                            <img alt="Language 3" src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[2]} className={`langImgC`} />
                         </div>
                     </div>
                 </div>
@@ -147,7 +148,7 @@ function ResumeViewer({ openResume }) {
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-green-300 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  " onClick={dowloadCv}>Download</button>
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-red-500 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95] " onClick={openResume}>Close</button>
                 </div>
-                <iframe src={"/CV/resume.pdf"} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
+                <iframe title="Download Resume" src={"/CV/resume.pdf"} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
                 <br />
                 <br />
                 <br />

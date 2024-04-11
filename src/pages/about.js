@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Container, DomHead, Footer, NavBar } from "../components"
+import { Container, Footer, NavBar } from "../components"
 import { FaArrowLeft } from 'react-icons/fa'
 import { ResponsiveNavbar } from '../components/Navbar'
 
@@ -25,7 +25,6 @@ function About() {
 
     return (
         <div>
-            <DomHead pageName='About' />
             <Container>
                 <NavBar />
             </Container>
@@ -67,9 +66,9 @@ function About() {
                                     <br />
                                     {
                                         userInfo.bio_desc.length > 0 ?
-                                            userInfo.bio_desc.map((bio, i) => {
+                                            userInfo.bio_desc.map((bio, index) => {
                                                 return (
-                                                    <p className={`text-[14px] mb-5 text-white-200`}>{bio}</p>
+                                                    <p className={`text-[14px] mb-5 text-white-200`} key={index}>{bio}</p>
                                                 )
                                             })
                                             :

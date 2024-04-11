@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div id="footer" className="relative w-screen h-[35vh] py-5 px-3 bg-dark-300 ">
       <Container>
-        <div className="relative flex flex-row items-center justify-between">
+        <div className="relative flex flex-row items-center justify-center flex-wrap gap-4">
           <div className="left flex flex-row">
             <h1 className=" text-[15px] ">
               <span className="font-extrabold">{usersInfo.github_username}</span>

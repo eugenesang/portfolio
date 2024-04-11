@@ -1,6 +1,6 @@
 {
   "languages": [
-    "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
   ]

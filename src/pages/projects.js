@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
-import { Container, DomHead, Footer, NavBar } from "../components"
+import { Container, Footer, NavBar } from "../components"
 import { FaArrowLeft } from 'react-icons/fa'
 import { ResponsiveNavbar } from '../components/Navbar'
 import { FaStar, FaArrowRight} from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 
-import { projects } from "../data/projects.json"
+import projectsData from "../data/projects.json"
 import userInfo from "../data/usersInfo.json"
 
+const projects = projectsData.projects;
 
 function Projects() {
     const [windowWidth, setWindowWidth] = useState(0)
@@ -23,7 +24,6 @@ function Projects() {
 
     return (
         <div>
-            <DomHead pageName='Projects' />
             <Container>
                 <NavBar />
             </Container>
@@ -74,14 +74,14 @@ function ProjectsCard() {
             {
                 projects.length > 0 ?
                     projects.map((list, i) => {
+                        const bg = `url(${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl})`;
                         return (
                             <div key={i} className={`box w-full h-auto bg-dark-200 rounded-[5px] relative top-[50px] transition-all mb-[50px] mr-[5px] opacity-[.7] md:w-[250px] md:ml-0 hover:opacity-[1]`}>
-                                <div className="imgCont"></div>
-                                <style jsx>{`
+                                <div className="imgCont" style={{backgroundImage: bg}}></div>
+                                <style jsx="true" >{`
                         .imgCont{
                             width: 100%;
                             height: 190px;
-                            background-image: url(${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl});
                             background-size: cover;
                             background-repeat: no-repeat;
                             background-position: center;

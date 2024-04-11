@@ -5,49 +5,56 @@
             "imageUrl": "https://raw.githubusercontent.com/eugenesang/portfolio/main/src/assets/workhubwriters-screenshot.png",
             "project_url": "https://workhubwriters.com",
             "description": "Platform that connects freelance writers with clients",
-            "tags": [ "react", "nodejs", "mongodb", "express" ]
+            "tags": ["nodejs", "mongodb", "express" ]
         },
         {
             "title": "Trusted Advisers Realty",
             "imageUrl": "https://raw.githubusercontent.com/Benrobo/babcock-uber/main/readmeImg/babcock-profile.png",
-            "project_url": "https://github.com/Benrobo/babcock-uber",
+            "project_url": "https://github.com/eugenesang/edmonton",
             "description": "Edmonton Real Estate Experts landing page",
-            "tags": [ "react", "postgresql", "nodejs" ]
+            "tags": [ "mysql", "nodejs", "google apis" ]
         },
         {
-            "title": "E-Workflow",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/e-workflow-client/main/readmeImg/dashboard.png",
-            "project_url": "https://github.com/Benrobo/e-workflow-client",
-            "description": "Automate document submission within a school.",
-            "tags": [ "react", "postgresql", "nodejs" ]
+            "title": "Chat APP",
+            "imageUrl": "https://raw.githubusercontent.com/eugenesang/chat-app-ui/main/documentation/Screenshot%202024-03-12%20201304.png",
+            "project_url": "https://github.com/eugenesang/chat-app-ui",
+            "description": "Chat application user interface built using react",
+            "tags": [ "react", "mysql", "nodejs" ]
         },
         {
-            "title": "Quickr",
+            "title": "Top Essay Inc",
             "imageUrl": "https://raw.githubusercontent.com/Benrobo/quickr/main/readmeImg/quickr1.png",
-            "project_url": "https://github.com/Benrobo/quickr",
-            "description": "Generate unique resume / CV.",
-            "tags": [ "react", "nodejs" ]
+            "project_url": "https://github.com/topessayinc",
+            "description": "A website for a freelance writers to interact with clients",
+            "tags": [ "nodejs", "express", "mysql" ]
         },
         {
-            "title": "PayRill",
-            "imageUrl": "https://camo.githubusercontent.com/b9b0a0e9957c3fe08d47cbacbd36dd87242837f5ce88f00ed9db4cd3da8fd3d9/68747470733a2f2f643131327936393861646975327a2e636c6f756466726f6e742e6e65742f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3232312f3931352f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/payrill",
-            "description": "Ease Checkout Processes and Reduce queues in shopping stores application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
+            "title": "Fitness Pal",
+            "imageUrl": "https://raw.githubusercontent.com/eugenesang/fitness_mobile/main/documentation/React-Native-Fitness-App.png",
+            "project_url": "https://github.com/eugenesang/fitness_mobile",
+            "description": "A mobile app that tracks a user's fitness routine",
+            "tags": [ "react native", "nodejs", "mongodb" ]
         },
         {
-            "title": "RayPal",
-            "imageUrl": "https://camo.githubusercontent.com/db234641b926872b7e4cd67a3daae83c4e937295922e4176feacf83b0d1975b8/68747470733a2f2f6368616c6c656e6765706f73742d73332d6368616c6c656e6765706f73742e6e6574646e612d73736c2e636f6d2f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3033362f3130312f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/Rapyd-Payment-app",
-            "description": "Payment Infrastructure application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
+            "title": "Travel Buddy",
+            "imageUrl": "https://raw.githubusercontent.com/eugenesang/travel-buddy/main/screenshot.png",
+            "project_url":"https://github.com/eugenesang/travel-buddy",
+            "description": "Plan and book your perfect trip with expert advice",
+            "tags": [ "react", "nodejs", "rapid api" ]
         },
          {
-            "title": "Tymonial",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/tymonial-app/main/github-img/formUI.png",
-            "project_url": "https://github.com/Benrobo/tymonial-app",
-            "description": "An easy way to collect users feedback into yout web app.",
-            "tags": [ "react", "nodejs", "linode server" ]
-        }
+            "title": "Employee Manager",
+            "imageUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+            "project_url": "https://github.com/eugenesang/MTYourFirstnameLastname",
+            "description": "A windows desktop app for managing employees",
+            "tags": [ "C#", "Visual Studio"]
+        },
+        {
+           "title": "Copula Model",
+           "imageUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+           "project_url": "https://github.com/eugenesang/modeling_of_dependency_of_equities_and_foreing_exchange",
+           "description": "Modeling of dependency of equities and foreign exchange",
+           "tags": [ "Python", "Jupiter Notebook"]
+       }
     ]
 }

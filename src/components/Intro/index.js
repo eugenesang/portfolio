@@ -17,7 +17,7 @@ export default function Intro() {
                     <IntroCards data={skills.skill} />
                 </div>
                 <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:w-[45%]`}>
-                    <p className={`text-[12px] text-white-200 `}>Introduce</p>
+                    <p className={`text-[12px] text-white-200 `}>Introduction</p>
                     <div className={`relative top-[20px]`}>
                         <h1 data-aos="zoom-in-up" className={`text-[35px] font-bold mb-[20px]`}>
                             {usersInfo.greeting_type}  I'm {usersInfo.full_name}.

@@ -28,9 +28,6 @@ function NavBar() {
                         <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
                             <Link to="/projects">Projects</Link>
                         </li>
-                        <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
-                            <Link to="#contact">Contact</Link>
-                        </li>
                     </ul>
                 </div>
                 <div className={`relative right w-[50vmin] hidden md:flex `}>

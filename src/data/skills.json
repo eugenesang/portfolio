@@ -1,19 +1,19 @@
 {
     "skill": [
         {
-            "name": "Frontend Engineering",
-            "description": "Development of beautiful and unique user interfaces.",
-            "projects_completed": "60"
-        },
-        {
-            "name": "Backend Development",
-            "description": "Development of complex and scalable backend architecture.",
+            "name": "Web Development",
+            "description": "Development of elegant and practical websites",
             "projects_completed": "100"
         },
         {
-            "name": "Database Design",
-            "description": "Development and Designing of complex scalable database achitecture.",
-            "projects_completed": "30"
+            "name": "Database Management",
+            "description": "Management and processing of large datasets",
+            "projects_completed": "50"
+        },
+        {
+            "name": "System Architecture",
+            "description": "Making plans for seamless system construction",
+            "projects_completed": "50"
         }
     ]
 }

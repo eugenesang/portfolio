@@ -21,7 +21,6 @@ function Contact() {
                         Let Make The Impossible <span className="text-green-200 font-extrabold">Possible.</span>
                     </h1>
                     <br />
-                    <a id='contact'></a>
                     <p data-aos="fade-right" className=" text-[20px] ">
                         Start by <span className=" text-green-200 underline cursor-pointer " onClick={openContactForm}>saying hi</span>
                     </p>

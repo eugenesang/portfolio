@@ -9,7 +9,7 @@
         },
         {
             "title": "Trusted Advisers Realty",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/babcock-uber/main/readmeImg/babcock-profile.png",
+            "imageUrl": "https://raw.githubusercontent.com/eugenesang/portfolio/main/src/assets/tar-design.jpg",
             "project_url": "https://github.com/eugenesang/edmonton",
             "description": "Edmonton Real Estate Experts landing page",
             "tags": [ "mysql", "nodejs", "google apis" ]
@@ -23,7 +23,7 @@
         },
         {
             "title": "Top Essay Inc",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/quickr/main/readmeImg/quickr1.png",
+            "imageUrl": "https://raw.githubusercontent.com/eugenesang/portfolio/main/src/assets/Screenshot%202024-04-11%20180535.png",
             "project_url": "https://github.com/topessayinc",
             "description": "A website for a freelance writers to interact with clients",
             "tags": [ "nodejs", "express", "mysql" ]

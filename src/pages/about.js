@@ -53,7 +53,7 @@ function About() {
                         </div>
                         <div className="w-full md:w-[50%] ">
                             <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
-                                <p className={`text-[12px] text-white-200 `}>Introduce</p>
+                                <p className={`text-[12px] text-white-200 `}>Introduction</p>
                                 <div className={`relative top-[20px]`}>
                                     <h1 className={`text-[35px] font-bold mb-[20px]`}>
                                         {userInfo.greeting_type}  I'm {userInfo.full_name}

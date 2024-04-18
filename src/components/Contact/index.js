@@ -22,7 +22,7 @@ function Contact() {
                     </h1>
                     <br />
                     <p data-aos="fade-right" className=" text-[20px] ">
-                        Start by <span className=" text-green-200 underline cursor-pointer " onClick={openContactForm}>saying hi</span>
+                        Step 1. <span className=" text-green-200 underline cursor-pointer " onClick={openContactForm}>hire developer</span>
                     </p>
                 </div>
             </Container>
@@ -76,7 +76,7 @@ function ContactForm({ contactActive, closeContactForm }) {
         }
 
         // validate phonenumber
-        if (validateEmail(userInput.email) == false) {
+        if (validateEmail(userInput.email) === false) {
             return notif.error("email is invalid.")
         }
 

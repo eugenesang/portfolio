@@ -150,6 +150,7 @@ function GithubRepo() {
                 setLoading(false)
 
                 if (data && data.length > 0) {
+
                     localStorage.setItem("user_repo", JSON.stringify(data))
                     setRepo(data)
                     return
@@ -179,7 +180,7 @@ function GithubRepo() {
         <>
             {
                 loading ? "Loading..." : error !== null ? <p>{error}</p> : repos.length > 0 ?
-                    repos.map((rep, i) => {
+                    repos.sort((a, b)=> new Date(b.updated_at) - new Date(a.updated_at)).map((rep, i) => {
                         return (
                             <div key={i} className="relative w-full h-[180px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px]">
                                 <h2 className="w-full text-[20px] ">{rep.name}</h2>

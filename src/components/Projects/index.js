@@ -68,7 +68,7 @@ function Projects() {
             <div className={`projects w-full h-auto p-3 flex flex-row flex-wrap items-center justify-between mb-[50px]`}>
                 {
                     projects.length > 0 ?
-                        projects.slice(0, 6).map((list, i) => {
+                        projects.sort((a, b)=> new Date(b.updated_at) - new Date(a.updated_at)).slice(0, 6).map((list, i) => {
 
                             const bg = `url(${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl})`;
                             return (
